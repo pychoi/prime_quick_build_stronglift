@@ -1,0 +1,50 @@
+<nav ng-include="'/assets/views/templates/nav.html'"></nav>
+
+<div class="opaque content-container">
+    <div class="container">
+        <h1 class="heading text-center text-uppercase">Workout B</h1>
+
+        <div>
+            <label for="date">Today's Date:
+                <input type="date" ng-model="newWeight.date" id="date" name="date" placeholder="lbs">
+            </label>
+        </div>
+
+        <div class="container workout-panel">
+            <p class="workout-name">Squat 5 x 5</p>
+
+            <p class="suggestion">Suggested Weight: {{calcWeight.squat}} lbs</p>
+
+            <label for="squat">Actual Weight:
+                <input type="text" ng-model="newWeight.squat" id="squat" name="squat" placeholder="lbs">
+            </label>
+        </div>
+
+        <div class="container workout-panel">
+            <p class="workout-name">Overhead Press 5 x 5</p>
+
+            <p class="suggestion">Suggested Weight: {{calcWeight.ohp}} lbs</p>
+
+            <label for="ohp">Actual Weight:
+                <input type="text" ng-model="newWeight.ohp" id="ohp" name="ohp" placeholder="lbs">
+            </label>
+        </div>
+
+        <div class="container workout-panel">
+            <p class="workout-name">Deadlift 1 x 5</p>
+
+            <p class="suggestion">Suggested Weight: {{calcWeight.deadlift}} lbs</p>
+
+            <label for="deadlift">Actual Weight:
+                <input type="text" ng-model="newWeight.deadlift" id="deadlift" name="deadlift" placeholder="lbs">
+            </label>
+        </div>
+
+        <div class="submit-button" ng-click="postWeight(newWeight)">Submit to Database</div>
+        <p class="successMsg" ng-show="predicate">Data Submitted to Database Successfully</p>
+    </div>
+
+
+
+
+</div>

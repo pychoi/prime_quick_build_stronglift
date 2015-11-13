@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="/vendors/angular-chart.min.css">-->
+    <link rel="stylesheet" href="/assets/styles/style.css">
+
+</head>
+<body>
+ <div class="opaque">
+
+
+    <!--ng-view looks for the route provider-->
+    <!--This is the main content of the page-->
+    <main ng-view></main>
+
+    <!--<footer ng-include="'/assets/views/templates/footer.html'"></footer>-->
+
+ </div>
+    <!--SCRIPTS-->
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <!--<script type="text/javascript" src="/vendors/angular-chart.min.js"></script>-->
+    <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers.min.js"></script>
+</body>
+</html>

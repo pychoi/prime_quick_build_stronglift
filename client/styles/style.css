@@ -1,0 +1,116 @@
+body{
+    background-color: black;
+    background-image: url("http://seattleboxinggym.com/wp-content/uploads/eattle-boxing-gym.jpg");
+    color: #ffffff;
+}
+
+.opaque {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.66);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-bar, .header {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.header{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.home {
+    text-align:center;
+    padding: 180px 0px;
+}
+
+.home h1{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.workout-home {
+    display: inline-block;
+    margin: 100px 50px;
+    padding: 80px 50px;
+    border: 3px solid white;
+}
+
+.workout-home h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.workout-home:hover{
+    background-color: rgba(255, 255, 255, 0.42);
+    color: white;
+}
+
+.heading{
+    letter-spacing: 10px;
+}
+
+.nav-bar h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.nav > li {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    display: inline-block;
+}
+
+.workout-panel{
+    padding: 18px 150px;
+    background-color: rgba(255, 255, 255, 0.51);
+    font-size: 18px;
+    margin: 25px auto;
+    border-radius: 5px;
+}
+
+.workout-name{
+    font-size: 40px;
+    color: #333;
+    font-weight: bold;
+}
+
+.suggestion{
+    font-size: 22px;
+}
+
+input{
+    color: #222;
+}
+
+label,input{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.submit-button{
+    font-size:18px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 60px;
+    padding: 10px 15px;
+    border: 2px solid white;
+}
+
+.submit-button:hover{
+    background-color: #ffffff;
+    color: #222;
+    cursor: pointer;
+}
+
+.successMsg {
+    display: inline-block;
+    margin-left: 30px;
+}
