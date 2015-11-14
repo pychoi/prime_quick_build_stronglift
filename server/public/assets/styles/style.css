@@ -5,7 +5,6 @@ body{
 }
 
 .opaque {
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.66);
 }
 
@@ -113,4 +112,8 @@ label,input{
 .successMsg {
     display: inline-block;
     margin-left: 30px;
+}
+
+.chart, .chart-container{
+    margin: 40px 0;
 }

@@ -1,4 +1,4 @@
-var myApp = angular.module("myApp", ["ngRoute"]);
+var myApp = angular.module("myApp", ["ngRoute", "chart.js"]);
 
 myApp.config(["$routeProvider", function($routeProvider){
     $routeProvider.
@@ -13,7 +13,13 @@ myApp.config(["$routeProvider", function($routeProvider){
             templateUrl: "assets/views/routes/workoutb.html",
             controller: "AnotherController"
         }).
+        when('/chart', {
+            templateUrl: "assets/views/routes/chart.html",
+            controller: "ChartController"
+        }).
         otherwise({
             redirectTo: 'home'
         })
 }]);
+
+

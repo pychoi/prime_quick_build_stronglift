@@ -39,7 +39,7 @@ app.get('/chart', function(req,res){
     var results = [];
 
     pg.connect(connectionString, function (err, client) {
-        var query = client.query("SELECT squat FROM workout_log ORDER BY id ASC");
+        var query = client.query("SELECT * FROM workout_log ORDER BY id ASC");
 
         // Stream results back one row at a time, push into results array
         query.on('row', function (row) {
@@ -68,12 +68,13 @@ app.post('/data', function(req, res){
         "row": req.body.row,
         "ohp": req.body.ohp,
         "deadlift": req.body.deadlift,
-        "workout": req.body.workout
+        "workout": req.body.workout,
+        "date": req.body.date
     };
 
     pg.connect(connectionString, function(err, client){
-        client.query("INSERT INTO workout_log (squat, ohp, deadlift, workout, bench, row) VALUES ($1, $2, $3, $4, $5, $6)",
-            [addedWeight.squat, addedWeight.ohp, addedWeight.deadlift, addedWeight.workout, addedWeight.bench, addedWeight.row],
+        client.query("INSERT INTO workout_log (squat, ohp, deadlift, workout, bench, row, date) VALUES ($1, $2, $3, $4, $5, $6, $7)",
+            [addedWeight.squat, addedWeight.ohp, addedWeight.deadlift, addedWeight.workout, addedWeight.bench, addedWeight.row, addedWeight.date],
             function (err, result) {
                 if (err) {
                     console.log("Error inserting data: ", err);

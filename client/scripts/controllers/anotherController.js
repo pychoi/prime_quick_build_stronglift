@@ -20,6 +20,7 @@ myApp.controller("AnotherController", ["$scope", "$http", function($scope, $http
         $scope.store.squat = foo.squat;
         $scope.store.ohp = foo.ohp;
         $scope.store.deadlift = foo.deadlift;
+        $scope.store.date = foo.date;
         console.log($scope.store);
         $http.post('/data', $scope.store).then(function(response){
             $scope.predicate = response.data;

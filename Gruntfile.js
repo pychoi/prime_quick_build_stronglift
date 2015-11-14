@@ -44,11 +44,20 @@ module.exports = function(grunt){
             },
             angularChart: {
                 expand: true,
-                cwd: 'node_modules/angular-chart.js/dist',
+                cwd: 'node_modules/angular-chart.js/dist/',
                 src: [
                     "angular-chart.min.js",
                     "angular-chart.min.js.map",
-                    "angular-chart.min.css"
+                    "angular-chart.min.css",
+                    "angular-chart.min.css.map"
+                ],
+                "dest": "server/public/vendors/"
+            },
+            Chart: {
+                expand: true,
+                cwd: 'node_modules/chart.js/',
+                src: [
+                    "Chart.min.js"
                 ],
                 "dest": "server/public/vendors/"
             },
