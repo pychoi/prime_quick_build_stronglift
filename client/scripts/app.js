@@ -6,12 +6,12 @@ myApp.config(["$routeProvider", function($routeProvider){
             templateUrl: "assets/views/routes/home.html",
         }).
         when('/workouta', {
-            templateUrl: "assets/views/routes/workouta.html",
-            controller: "SomeController"
+            templateUrl: "assets/views/routes/workoutA.html",
+            controller: "WorkOutA"
         }).
         when('/workoutb', {
             templateUrl: "assets/views/routes/workoutb.html",
-            controller: "AnotherController"
+            controller: "WorkOutB"
         }).
         when('/chart', {
             templateUrl: "assets/views/routes/chart.html",

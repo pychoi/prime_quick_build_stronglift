@@ -1,4 +1,4 @@
-myApp.controller("AnotherController", ["$scope", "$http", function($scope, $http){
+myApp.controller("WorkOutB", ["$scope", "$http", function($scope, $http){
     $scope.idArray=[];
     $scope.calcWeight = {};
     $scope.newWeight = {};

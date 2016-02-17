@@ -6,7 +6,7 @@
 
         <div>
             <label for="date">Today's Date:
-                <input type="date" ng-model="newWeight.date" id="date" name="date" placeholder="lbs">
+                <input type="date" ng-model="newWorkout.date" id="date" name="date">
             </label>
         </div>
 
@@ -16,8 +16,25 @@
             <p class="suggestion">Suggested Weight: {{calcWeight.squat}} lbs</p>
 
             <label for="squat">Actual Weight:
-                <input type="text" ng-model="newWeight.squat" id="squat" name="squat" placeholder="lbs">
+                <input type="number" ng-model="newWorkout.squat.weight" id="squat" name="squat" placeholder="lbs">
             </label>
+
+            <label>Set 1</label>
+              <select ng-model="newWorkout.squat.set1" ng-options="option for option in repOptions">
+              </select>
+            <label>Set 2</label>
+              <select ng-model="newWorkout.squat.set2" ng-options="option for option in repOptions">
+              </select>
+            <label>Set 3</label>
+              <select ng-model="newWorkout.squat.set3" ng-options="option for option in repOptions">
+              </select>
+            <label>Set 4</label>
+              <select ng-model="newWorkout.squat.set4" ng-options="option for option in repOptions">
+              </select>
+            <label>Set 5</label>
+              <select ng-model="newWorkout.squat.set5" ng-options="option for option in repOptions">
+              </select>
+
         </div>
 
         <div class="container workout-panel">
@@ -26,8 +43,25 @@
             <p class="suggestion">Suggested Weight: {{calcWeight.bench}} lbs</p>
 
             <label for="bench">Actual Weight:
-                <input type="text" ng-model="newWeight.bench" id="bench" name="bench" placeholder="lbs">
+                <input type="number" ng-model="newWorkout.bench.weight" id="bench" name="bench" placeholder="lbs">
             </label>
+
+            <label>Set 1</label>
+              <select ng-model="newWorkout.bench.set1" ng-options="option for option in repOptions">
+              </select>
+            <label>Set 2</label>
+              <select ng-model="newWorkout.bench.set2" ng-options="option for option in repOptions">
+              </select>
+            <label>Set 3</label>
+              <select ng-model="newWorkout.bench.set3" ng-options="option for option in repOptions">
+              </select>
+            <label>Set 4</label>
+              <select ng-model="newWorkout.bench.set4" ng-options="option for option in repOptions">
+              </select>
+            <label>Set 5</label>
+              <select ng-model="newWorkout.bench.set5" ng-options="option for option in repOptions">
+              </select>
+
         </div>
 
         <div class="container workout-panel">
@@ -36,15 +70,29 @@
             <p class="suggestion">Suggested Weight: {{calcWeight.row}} lbs</p>
 
             <label for="row">Actual Weight:
-                <input type="text" ng-model="newWeight.row" id="row" name="row" placeholder="lbs">
+                <input type="number" ng-model="newWorkout.row.weight" id="row" name="row" placeholder="lbs">
             </label>
+
+            <label>Set 1</label>
+              <select ng-model="newWorkout.row.set1" ng-options="option for option in repOptions">
+              </select>
+            <label>Set 2</label>
+              <select ng-model="newWorkout.row.set2" ng-options="option for option in repOptions">
+              </select>
+            <label>Set 3</label>
+              <select ng-model="newWorkout.row.set3" ng-options="option for option in repOptions">
+              </select>
+            <label>Set 4</label>
+              <select ng-model="newWorkout.row.set4" ng-options="option for option in repOptions">
+              </select>
+            <label>Set 5</label>
+              <select ng-model="newWorkout.row.set5" ng-options="option for option in repOptions">
+              </select>
+
         </div>
 
-        <div class="submit-button" ng-click="postWeight(newWeight)">Submit to Database</div>
-        <p class="successMsg" ng-show="predicate">Data Submitted to Database Successfully</p>
+        <div class="submit-button" ng-click="postNewWorkout(newWorkout)">Submit</div>
+        <p class="successMsg" ng-show="predicate">Data Submitted Successfully</p>
     </div>
-
-
-
 
 </div>

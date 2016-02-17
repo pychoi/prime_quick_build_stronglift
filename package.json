@@ -1,13 +1,13 @@
 {
-  "name": "basic_heroku_example",
+  "name": "strong_lift_recorder",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/app.js"
   },
-  "author": "Scott Bromander",
+  "author": "Pui Choi",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.4.7",
